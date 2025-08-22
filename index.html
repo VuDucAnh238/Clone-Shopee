@@ -4,74 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b798dbba86.js" crossorigin="anonymous"></script>
     <title>Shopee</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
+    <div class="app">
         <header class="header">
             <div>
-                <nav>
-                    <ul>
-                        <li>Kênh người bán</li>
-                        <li>Trở thành người bán Shopee</li>
-                        <li>Tải ứng dụng</li>
-                        <div>
-                            <img src="">
-                            <div>
-                                <a href="#" >
-                                    <img src="">
-                                </a>
-                                <a href="#" >
-                                    <img src="" >
-                                </a>
-                                <a href="#" >
-                                    <img src="" >
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <li>Kết nối</li>
-                            <a href="https://instagram.com/Shopee_VN">
-                                <i></i>
+                <nav class="header__navbar">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">Kênh người bán</li> |
+                        <li class="header__nav-item">Trở thành người bán Shopee</li> |
+                        <li class="header__nav-item">Tải ứng dụng</li> |
+                        <div class="header__nav-icons">
+                            <li class="header__nav-item">Kết nối</li>
+                            <a href="https://facebook.com/ShopeeVN" class="header__nav-icon-link">
+                                <i class="fa-brands fa-facebook"></i>
                             </a>
-                            <a href="">
-                                <i></i>
+                            <a href="https://instagram.com/Shopee_VN" class="header__nav-icon-link">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                     </ul>
-                    <div>
-                        <a href="#">Thông Báo</a>
-                        <a href="#">Hỗ Trợ</a>
-                        <a href="#">Tiếng Việt</a>
-                        <a href="#">Đăng Ký</a>
-                        <a href="#">Đăng Nhập</a>
+                    <div class="header__nav-links">
+                        <a href="#" class="header__nav-item-link">Thông Báo
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <a href="#" class="header__nav-item-link">Hỗ Trợ
+                            <i class="fa-solid fa-circle-question"></i>
+                        </a>
+                        <a href="#" class="header__nav-item-link">Tiếng Việt
+                            <i class="fa-solid fa-language"></i>
+                        </a>
+                        <a href="#" class="header__nav-item-link">Đăng Ký</a> |
+                        <a href="#" class="header__nav-item-link">Đăng Nhập</a>
                     </div>
                 </nav>
             </div>
-            <div>
-                <div>
-                    <img src="logo.jpg" alt="logo Shopee" />
+            <div class="header__container">
+                <div class="header__logo-container">
+                    <img src="IMG/logo.jpg" alt="logo Shopee" class="header__logo" />
                 </div>
-                <div>
-                    <input type="text" placeholder="Shopee bao ship 0Đ - Đăng ký ngay!" />
+                <div class="header-searchbar-container">
+                    <form role="search" autocomplete="off" class="shopee-searchbar">
+                        <div class="shopee-searchbar__main">
+                            <div class="shopee-searchbar-input">
+                                <input aria-label="Shopee bao ship 0Đ - Đăng ký ngay!"
+                                    class="shopee-searchbar-input__input" maxlength="128"
+                                    placeholder="Shopee bao ship 0Đ - Đăng ký ngay!" autocomplete="off"
+                                    aria-autocomplete="list" aria-controls="shopee-searchbar-listbox"
+                                    aria-expanded="false" role="combobox" value>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button"
+                                class="shopee-searchbar__search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 pb-2 text-xs text-white">
-                <ul class="flex space-x-4">
-                    <li>Giày Quai Hậu Nữ Đế Cao</li>
-                    <li>Áo Phông Đẹp</li>
-                    <li>Dép</li>
-                    <li>Đèn Bi Cầu Xe Điện</li>
-                    <li>Chân Gà Cay Tứ Xuyên Bịch 30 Cái</li>
-                    <li>Điện Thoại Giá Học Sinh Sinh Viên</li>
-                </ul>
+                <div class="header__cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </header>
     </div>
     <section>
-        <img src="banner.jpg" alt="Banner Shopee">
+        <img src="IMG/banner.jpg" alt="Banner Shopee" class="banner-image" />
     </section>
 </body>
 

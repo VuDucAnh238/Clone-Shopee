@@ -1,0 +1,120 @@
+.app {
+    overflow: hidden;
+    font-size: 13px;
+    color: white;
+}
+
+.header {
+    height: var(--header-height);
+    background-image: linear-gradient(var(--main-color1), var(--main-color2));
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    margin: 0 -6px;
+}
+
+.header__nav-list {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.header__nav-item {
+    padding: 0 7px;
+}
+
+.header__nav-item,
+.header__nav-item-link {
+    display: flex;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+}
+
+.header__nav-item--hover:hover,
+.header__nav-item-link:hover,
+.header__nav-icon-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header__logo {
+    width: 100px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-icon-link {
+    padding: auto;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header__nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__logo {
+    width: 162px;
+    height: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: -2px;
+}
+
+.shopee-searchbar {
+    display: flex;
+    height: 80px;
+    flex: 1;
+    max-width: 700px;
+    width: inherit;
+}
+
+.shopee-searchbar-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+}
+
+.shopee-searchbar__search-button {
+    background: #ef5f17;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
